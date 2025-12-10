@@ -18,7 +18,7 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 *   **The Solution:** A dashboard connecting to public **HL7 FHIR (R4)** servers to ingest raw patient resources, parse complex JSON, and visualize population risk scores.
 *   **Tech Stack:** `Python`, `HL7 FHIR`, `REST APIs`, `Seaborn`.
 
-### [04_intersystems_iris_hybrid_xai.ipynb](./Explainable_AI_(Glass_Box)_Dashboard.ipynb)
+### [04_intersystems_iris_hybrid_xai.ipynb](./Hybrid_AI_with_InterSystems_IRIS_&_Embedded_Python.ipynb)
 **"The Infrastructure Layer"**
 *   **The Problem:** Hospitals rely on legacy databases (Epic/InterSystems) that are often disconnected from modern Python AI stacks.
 *   **The Solution:** A hybrid architecture using the **InterSystems Native SDK** to train models in Python and write results directly back to high-speed **NoSQL Globals** (`^PatientRisk`) for real-time EMR alerts.
