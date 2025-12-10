@@ -46,7 +46,13 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 ## 🤖 3. Generative AI & Clinical Automation
 *Next-generation tools to reduce provider burnout and operational waste.*
 
-### [05_clinical_rag_chart_review.ipynb](./05_clinical_rag_chart_review.ipynb)
+### [05_Evidence_Based_Medical_RAG_Assistant_(Toy_data_version)](./Evidence_Based_Medical_RAG_Assistant_(Toy_data_version).ipynb)
+**"The Automation Layer"**
+*   **The Problem:** Physicians spend hours manually reviewing unstructured text in Discharge Summaries to find specific details.
+*   **The Solution:** A **Retrieval-Augmented Generation (RAG)** pipeline. It ingests messy, unstructured clinical notes, chunks them for context, and retrieves precise evidence (Meds, Procedures) to answer natural language queries.
+*   **Tech Stack:** `LangChain`, `ChromaDB`, `HuggingFace Embeddings`.
+
+### [06_Product_Prototype_Clinical_RAG_for_Automated_Chart_Review](./Product_Prototype_Clinical_RAG_for_Automated_Chart_Review.ipynb)
 **"The Automation Layer"**
 *   **The Problem:** Physicians spend hours manually reviewing unstructured text in Discharge Summaries to find specific details.
 *   **The Solution:** A **Retrieval-Augmented Generation (RAG)** pipeline. It ingests messy, unstructured clinical notes, chunks them for context, and retrieves precise evidence (Meds, Procedures) to answer natural language queries.
