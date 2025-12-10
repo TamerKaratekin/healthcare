@@ -46,7 +46,7 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 ## 🤖 3. Generative AI & Clinical Automation
 *Next-generation tools to reduce provider burnout and operational waste.*
 
-### [Evidence_Based_Medical_RAG_Assistant_(Protocol_version).ipynb)](./Evidence_Based_Medical_RAG_Assistant_(Toy_data_version).ipynb)
+### [Evidence_Based_Medical_RAG_Assistant_(Protocol_version).ipynb)](./Evidence_Based_Medical_RAG_Assistant_(Protocol_version).ipynb)
 **"The Knowledge Layer: Protocol Compliance"**
 *   **The Problem**: Clinical protocols (e.g., Sepsis Guidelines) change frequently. Clinicians cannot memorize every update, and generic LLMs (ChatGPT) often hallucinate medical advice.
 *   **The Solution**: A **Retrieval-Augmented Generation (RAG)** prototype that ingests specific medical guidelines (Source of Truth). It forces the AI to "look up" the approved protocol before answering questions about dosage or resuscitation steps, ensuring Safe GenAI practices.
