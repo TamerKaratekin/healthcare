@@ -8,4 +8,6 @@ This repo contains various healthcare PM & ML projects that I experimented and l
 3.	Explainable AI (Glass Box) Dashboard	"clinical trust (Why doctors hate Black Box AI)."
 This work is related to the newborn retinopathy paper I authored with neonatology clinicians at the largest birth hospital in Istanbul.
 
-5.	InterSystems Hybrid Architecture	"enterprise scale (Connecting AI to legacy databases)."
+4.	Hybrid AI with InterSystems IRIS & Embedded Python (Connecting AI to legacy databases)."
+
+5.	Evidence-Based Medical RAG Assistant (Toy data version)
