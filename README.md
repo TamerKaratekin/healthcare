@@ -1,5 +1,5 @@
 # healthcare AI PM ML repo
-This repo contains various healthcare PM & ML projects that I experimented and learned with. 
+This repo contains various healthcare PM&ML projects that I experimented and learned with. 
 
 1.	FHIR Interoperability Dashboard	"the data standards (HL7/FHIR) that connect hospitals"
 
