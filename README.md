@@ -48,9 +48,9 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 
 ### [05_Evidence_Based_Medical_RAG_Assistant_(Toy_data_version)](./Evidence_Based_Medical_RAG_Assistant_(Toy_data_version).ipynb)
 **"The Automation Layer"**
-*   **The Problem:** Physicians spend hours manually reviewing unstructured text in Discharge Summaries to find specific details.
-*   **The Solution:** A **Retrieval-Augmented Generation (RAG)** pipeline. It ingests messy, unstructured clinical notes, chunks them for context, and retrieves precise evidence (Meds, Procedures) to answer natural language queries.
-*   **Tech Stack:** `LangChain`, `ChromaDB`, `HuggingFace Embeddings`.
+*   **The Problem**: Clinical protocols (e.g., Sepsis Guidelines) change frequently. Clinicians cannot memorize every update, and generic LLMs (ChatGPT) often hallucinate medical advice.
+*   **The Solution**: A **Retrieval-Augmented Generation (RAG)** prototype that ingests specific medical guidelines (Source of Truth). It forces the AI to "look up" the approved protocol before answering questions about dosage or resuscitation steps, ensuring Safe GenAI practices.
+*   **Tech Stack**: LangChain, RecursiveCharacterTextSplitter, ChromaDB.
 
 ### [06_Product_Prototype_Clinical_RAG_for_Automated_Chart_Review](./Product_Prototype_Clinical_RAG_for_Automated_Chart_Review.ipynb)
 **"The Automation Layer"**
