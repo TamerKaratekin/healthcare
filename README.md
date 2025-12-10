@@ -1,15 +1,55 @@
-# healthcare AI PM ML repo
-This repo contains various healthcare PM & ML projects that I experimented and learned with. 
+# Healthcare Product Analytics & AI Portfolio
 
-1.	FHIR Interoperability Dashboard	"the data standards (HL7/FHIR) that connect hospitals"
+### 👨‍💻 Tamer Karatekin | AI Product Manager
+**MIT EECS, Econ & Healthcare Alum | Ex-OCI | Healthcare IT & Strategy**  
+[LinkedIn](https://linkedin.com/in/tamerkaratekin) | [Portfolio Website](https://github.com/tamerkaratekin/healtchare)
 
-2.	HIPAA-Compliant NLP Pipeline	"security & privacy (Redacting PHI) before using AI."
+---
 
-3.	Explainable AI (Glass Box) Dashboard	"clinical trust (Why doctors hate Black Box AI)."
-This work is related to the newborn retinopathy paper I authored with neonatology clinicians at the largest birth hospital in Istanbul.
+### 🏥 Project Portfolio Strategy
+This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, moving from data ingestion and standards to advanced AI implementation. Each project addresses a specific barrier to AI adoption in modern healthcare systems: **Interoperability, Privacy, Trust, Infrastructure, and Automation.**
 
-4.	Hybrid AI with InterSystems IRIS & Embedded Python (Connecting AI to legacy databases)."
+## 📂 1. Enterprise Architecture & Interoperability
+*Foundational layers required to make health data usable.*
 
-5.	Evidence-Based Medical RAG Assistant (Toy data version)
+### [01_fhir_population_health_dashboard.ipynb](./01_fhir_population_health_dashboard.ipynb)
+**"The Standards Layer"**
+*   **The Problem:** Health data is siloed. To build scalable products, we must leverage interoperability standards.
+*   **The Solution:** A dashboard connecting to public **HL7 FHIR (R4)** servers to ingest raw patient resources, parse complex JSON, and visualize population risk scores.
+*   **Tech Stack:** `Python`, `HL7 FHIR`, `REST APIs`, `Seaborn`.
 
-6.	Product Prototype: Clinical RAG for Automated Chart Review
+### [04_intersystems_iris_hybrid_xai.ipynb](./04_intersystems_iris_hybrid_xai.ipynb)
+**"The Infrastructure Layer"**
+*   **The Problem:** Hospitals rely on legacy databases (Epic/InterSystems) that are often disconnected from modern Python AI stacks.
+*   **The Solution:** A hybrid architecture using the **InterSystems Native SDK** to train models in Python and write results directly back to high-speed **NoSQL Globals** (`^PatientRisk`) for real-time EMR alerts.
+*   **Tech Stack:** `InterSystems IRIS`, `Embedded Python`, `NoSQL`.
+
+---
+
+## 🔒 2. Trust, Safety & Regulatory Compliance
+*Ensuring AI is safe, legal, and trusted by clinicians.*
+
+### [02_nlp_phi_redaction_pipeline.ipynb](./02_nlp_phi_redaction_pipeline.ipynb)
+**"The Privacy Layer"**
+*   **The Problem:** You cannot train AI on patient data without violating HIPAA/GDPR.
+*   **The Solution:** A "Privacy-First" pipeline utilizing **Microsoft Presidio** to detect and redact PHI (names, dates) *before* data enters the analytics stream.
+*   **Tech Stack:** `Microsoft Presidio`, `SpaCy`, `Transformers`.
+
+### [03_explainable_ai_cds_dashboard.ipynb](./03_explainable_ai_cds_dashboard.ipynb)
+**"The Trust Layer"**
+*   **The Problem:** "Black Box" models (Deep Learning) are often rejected by the FDA and clinicians due to lack of transparency.
+*   **The Solution:** A "Glass Box" Clinical Decision Support (CDS) tool using **Explainable Boosting Machines (EBM)**. It provides local feature attribution (e.g., *"Risk is high because Glucose > 180"*), mirroring the approach used in my research on Retinopathy of Prematurity.
+*   **Tech Stack:** `InterpretML` (Microsoft), `Scikit-Learn`, `Matplotlib`.
+
+---
+
+## 🤖 3. Generative AI & Clinical Automation
+*Next-generation tools to reduce provider burnout and operational waste.*
+
+### [05_clinical_rag_chart_review.ipynb](./05_clinical_rag_chart_review.ipynb)
+**"The Automation Layer"**
+*   **The Problem:** Physicians spend hours manually reviewing unstructured text in Discharge Summaries to find specific details.
+*   **The Solution:** A **Retrieval-Augmented Generation (RAG)** pipeline. It ingests messy, unstructured clinical notes, chunks them for context, and retrieves precise evidence (Meds, Procedures) to answer natural language queries.
+*   **Tech Stack:** `LangChain`, `ChromaDB`, `HuggingFace Embeddings`.
+
+###
