@@ -1,10 +1,10 @@
 # healthcare AI PM ML repo
 This repo contains various healthcare PM & ML projects that I experimented and learned with. 
 
-1	FHIR Interoperability Dashboard	"the data standards (HL7/FHIR) that connect hospitals"
+1.	FHIR Interoperability Dashboard	"the data standards (HL7/FHIR) that connect hospitals"
 
-2	HIPAA-Compliant NLP Pipeline	"security & privacy (Redacting PHI) before using AI."
+2.	HIPAA-Compliant NLP Pipeline	"security & privacy (Redacting PHI) before using AI."
 
-3	Explainable AI (Glass Box) Dashboard	"clinical trust (Why doctors hate Black Box AI)."
+3.	Explainable AI (Glass Box) Dashboard	"clinical trust (Why doctors hate Black Box AI)."
 
-4	InterSystems Hybrid Architecture	"enterprise scale (Connecting AI to legacy databases)."
+4.	InterSystems Hybrid Architecture	"enterprise scale (Connecting AI to legacy databases)."
