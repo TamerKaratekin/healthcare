@@ -11,3 +11,5 @@ This work is related to the newborn retinopathy paper I authored with neonatolog
 4.	Hybrid AI with InterSystems IRIS & Embedded Python (Connecting AI to legacy databases)."
 
 5.	Evidence-Based Medical RAG Assistant (Toy data version)
+
+6.	Product Prototype: Clinical RAG for Automated Chart Review
