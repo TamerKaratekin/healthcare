@@ -64,4 +64,12 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 *   **The Solution:** An operational analytics model that generates patient risk profiles using the LACE Index, identifies high-risk cohorts lacking follow-up appointments, and models the Financial ROI of deploying a digital intervention tool.
 *   **Tech Stack:** Pandas, Financial Modeling, Risk Stratification.
 
+## 📱 4. Product Prototyping (UX & Simulation)
+*Interactive tools for stakeholder alignment and "What-If" analysis.*
+
+### [Interactive_roi_app.ipynb](./Interactive_roi_app.ipynb)
+**"The Interactive Layer"**
+*   **The Problem:** Stakeholders (CFOs, Medical Directors) often struggle to understand the financial value of complex clinical interventions using static spreadsheets.
+*   **The Solution:** An interactive **Streamlit Web App** prototype. It allows executives to adjust key operational variables (e.g., Annual Patient Volume, CMS Penalty Risk) and instantly visualize the **Net ROI** of purchasing digital health software.
+*   **Tech Stack:** `Streamlit`, `Python`, `Interactive Visualization`.
 ###
