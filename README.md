@@ -5,6 +5,6 @@ This repo contains various healthcare PM & ML projects that I experimented and l
 
 2.	HIPAA-Compliant NLP Pipeline	"security & privacy (Redacting PHI) before using AI."
 
-3.	Explainable AI (Glass Box) Dashboard	"clinical trust (Why doctors hate Black Box AI)."
+3.	Explainable AI (Glass Box) Dashboard	"clinical trust (Why doctors hate Black Box AI)." This work is related to the newborn retinopathy paper I authored with neonatology clinicians at the largest birth hospital in Istanbul.
 
 4.	InterSystems Hybrid Architecture	"enterprise scale (Connecting AI to legacy databases)."
