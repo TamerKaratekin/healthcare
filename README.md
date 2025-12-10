@@ -12,7 +12,7 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 ## 📂 1. Enterprise Architecture & Interoperability
 *Foundational layers required to make health data usable.*
 
-### [01_fhir_population_health_dashboard.ipynb](./01_fhir_population_health_dashboard.ipynb)
+### [01_fhir_population_health_dashboard.ipynb](./Product_Analytics_FHIR_Interoperability_%26_Population_Risk_Dashboard.ipynb)
 **"The Standards Layer"**
 *   **The Problem:** Health data is siloed. To build scalable products, we must leverage interoperability standards.
 *   **The Solution:** A dashboard connecting to public **HL7 FHIR (R4)** servers to ingest raw patient resources, parse complex JSON, and visualize population risk scores.
