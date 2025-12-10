@@ -58,7 +58,7 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 *   **The Solution:** A **Retrieval-Augmented Generation (RAG)** pipeline. It ingests messy, unstructured clinical notes, chunks them for context, and retrieves precise evidence (Meds, Procedures) to answer natural language queries.
 *   **Tech Stack:** `LangChain`, `ChromaDB`, `HuggingFace Embeddings`.
 
-### [Hospital Readmission Risk & Cost Optimizer.ipynb](./Hospital Readmission Risk & Cost Optimizer.ipynb)
+### [Hospital_Readmission_Risk_&_Cost_Optimizer.ipynb](./Hospital_Readmission_Risk_&_Cost_Optimizer.ipynb)
 **"The Business Layer: ROI & Value-Based Care"**
 *   **The Problem:** Under Value-Based Care models, hospitals lose millions in CMS penalties when patients are readmitted within 30 days. Operational inefficiencies are often invisible without data.
 *   **The Solution:** An operational analytics model that generates patient risk profiles using the LACE Index, identifies high-risk cohorts lacking follow-up appointments, and models the Financial ROI of deploying a digital intervention tool.
