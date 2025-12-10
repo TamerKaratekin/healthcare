@@ -35,7 +35,7 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 *   **The Solution:** A "Privacy-First" pipeline utilizing **Microsoft Presidio** to detect and redact PHI (names, dates) *before* data enters the analytics stream.
 *   **Tech Stack:** `Microsoft Presidio`, `SpaCy`, `Transformers`.
 
-### [03_explainable_ai_cds_dashboard.ipynb](./03_explainable_ai_cds_dashboard.ipynb)
+### [03_explainable_ai_cds_dashboard.ipynb](./Explainable_AI_(Glass_Box)_Dashboard.ipynb)
 **"The Trust Layer"**
 *   **The Problem:** "Black Box" models (Deep Learning) are often rejected by the FDA and clinicians due to lack of transparency.
 *   **The Solution:** A "Glass Box" Clinical Decision Support (CDS) tool using **Explainable Boosting Machines (EBM)**. It provides local feature attribution (e.g., *"Risk is high because Glucose > 180"*), mirroring the approach used in my research on Retinopathy of Prematurity.
