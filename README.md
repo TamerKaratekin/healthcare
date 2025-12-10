@@ -29,7 +29,7 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 ## 🔒 2. Trust, Safety & Regulatory Compliance
 *Ensuring AI is safe, legal, and trusted by clinicians.*
 
-### [Product_Prototype_HIPAA_Compliant_NLP_Pipeline_(Redaction_%26_Extraction).ipynb](./Product_Prototype_HIPAA_Compliant_NLP_Pipeline_(Redaction_%26_Extraction).ipynb)
+### [Product_Prototype_HIPAA_Compliant_NLP_Pipeline_(Redaction_&_Extraction).ipynb](./Product_Prototype_HIPAA_Compliant_NLP_Pipeline_(Redaction_%26_Extraction).ipynb)
 **"The Privacy Layer"**
 *   **The Problem:** You cannot train AI on patient data without violating HIPAA/GDPR.
 *   **The Solution:** A "Privacy-First" pipeline utilizing **Microsoft Presidio** to detect and redact PHI (names, dates) *before* data enters the analytics stream.
