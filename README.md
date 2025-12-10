@@ -1,4 +1,4 @@
-# Healthcare Product Analytics & AI Portfolio
+# Healthcare Product Management & AI Portfolio
 
 ### 👨‍💻 Tamer Karatekin | AI Product Manager
 **MIT EECS, Econ & Healthcare Alum | Ex-OCI PM | Healthcare IT & Strategy**  
