@@ -9,6 +9,8 @@
 ### 🏥 Project Portfolio Strategy
 This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, moving from data ingestion and standards to advanced AI implementation. Each project addresses a specific barrier to AI adoption in modern healthcare systems: **Interoperability, Privacy, Trust, Infrastructure, and Automation.**
 
+**New portfolio addition:** the **InterSystems IRIS FHIR Care Gap & Readmission Risk Engine** notebook (Colab-ready) now lives in Section 1 alongside the existing interoperability projects below.
+
 ## 📂 1. Enterprise Architecture & Interoperability
 *Foundational layers required to make health data usable.*
 
@@ -23,6 +25,22 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 *   **The Problem:** Hospitals rely on legacy databases (Epic/InterSystems) that are often disconnected from modern Python AI stacks.
 *   **The Solution:** A hybrid architecture using the **InterSystems Native SDK** to train models in Python and write results directly back to high-speed **NoSQL Globals** (`^PatientRisk`) for real-time EMR alerts.
 *   **Tech Stack:** `InterSystems IRIS`, `Embedded Python`, `NoSQL`.
+
+### [InterSystems_IRIS_FHIR_Care_Gap_and_Readmission_Risk_Engine.ipynb](./InterSystems_IRIS_FHIR_Care_Gap_and_Readmission_Risk_Engine.ipynb)
+**"The Care Gap + Risk Engine"**
+*   **The Problem:** Care teams lack unified visibility into readmission risk and missing guideline-based interventions when data is scattered across FHIR resources.
+*   **The Solution:** An end-to-end notebook that connects to the **IRIS for Health FHIR Server**, computes **LACE-style readmission risk** and diabetes/hypertension care gaps, then writes results back as FHIR Observations or IRIS Globals—plus an optional ingest of a real de-identified UCI hospital dataset to enrich the repository.
+*   **Tech Stack:** `InterSystems IRIS for Health`, `FHIR R4`, `Python`, `Requests`, `Seaborn`, `IRIS Native SDK`.
+
+#### How to run this notebook in Google Colab
+1. Open directly in Colab: [colab.research.google.com/github/tamerkaratekin/healthcare/blob/main/InterSystems_IRIS_FHIR_Care_Gap_and_Readmission_Risk_Engine.ipynb](https://colab.research.google.com/github/tamerkaratekin/healthcare/blob/main/InterSystems_IRIS_FHIR_Care_Gap_and_Readmission_Risk_Engine.ipynb) (or `File → Open Notebook → GitHub` and paste this repository URL).
+2. Run the setup cell to install dependencies (GPU not required). If you need the IRIS Native SDK, add `intersystems-irisnative` to the list:
+   ```python
+   !pip install -q pandas numpy seaborn matplotlib requests fhir.resources
+   ```
+3. In the configuration cell, point `FHIR_BASE_URL` to your IRIS FHIR endpoint. The notebook defaults to a public HAPI test server for read-only exploration if you skip IRIS.
+4. To use your local IRIS docker instance from Colab, start the [IRIS FHIR template](https://github.com/intersystems-community/iris-fhir-template), load Synthea patients, and tunnel port **32783** to Colab (e.g., `ssh -L 32783:localhost:32783 ...` or `cloudflared tunnel --url http://localhost:32783`). Paste the tunneled URL into `FHIR_BASE_URL` and rerun the FHIR fetch cells.
+5. If you do not have IRIS reachable, you can still execute the notebook’s UCI dataset section to test the care-gap and scoring logic entirely offline.
 
 ---
 
