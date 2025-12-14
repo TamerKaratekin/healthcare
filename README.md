@@ -18,6 +18,12 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 *   **The Solution:** A dashboard connecting to public **HL7 FHIR (R4)** servers to ingest raw patient resources, parse complex JSON, and visualize population risk scores.
 *   **Tech Stack:** `Python`, `HL7 FHIR`, `REST APIs`, `Seaborn`.
 
+### [IRIS_FHIR_Care_Gaps_Readmission_Risk.ipynb](./IRIS_FHIR_Care_Gaps_Readmission_Risk.ipynb)
+**"Risk Stratification on a Live FHIR Server"**
+*   **The Problem:** Many healthcare analytics demos produce uniform risk scores and ignore missing clinical data, resulting in poor stratification and misleading insights when run against real systems.
+*   **The Solution:** A fully reproducible end-to-end analytics pipeline built on a live **InterSystems IRIS for Health (FHIR R4)** server. The notebook ingests synthetic Synthea data, detects when initial risk models fail to stratify patients, refines scoring logic to produce meaningful differentiation, and explicitly treats missing clinical signals (e.g., absent blood pressure) as care gaps. Derived risk scores are written back into FHIR as standardized `Observation` resources using idempotent write patterns.
+*   **Tech Stack:** `Python`, `InterSystems IRIS for Health`, `HL7 FHIR R4`, `REST APIs`, `Pandas`, `Synthetic Data (Synthea)`
+
 ### [Hybrid_AI_with_InterSystems_IRIS_&_Embedded_Python.ipynb](./Hybrid_AI_with_InterSystems_IRIS_&_Embedded_Python.ipynb)
 **"The Infrastructure Layer"**
 *   **The Problem:** Hospitals rely on legacy databases (Epic/InterSystems) that are often disconnected from modern Python AI stacks.
