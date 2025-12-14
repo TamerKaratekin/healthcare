@@ -19,10 +19,11 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 *   **Tech Stack:** `Python`, `HL7 FHIR`, `REST APIs`, `Seaborn`.
 
 ### [IRIS_FHIR_Care_Gaps_Readmission_Risk.ipynb](./IRIS_FHIR_Care_Gaps_Readmission_Risk.ipynb)
-**"Risk Stratification on a Live FHIR Server"**
-*   **The Problem:** Many healthcare analytics demos produce uniform risk scores and ignore missing clinical data, resulting in poor stratification and misleading insights when run against real systems.
-*   **The Solution:** A fully reproducible end-to-end analytics pipeline built on a live **InterSystems IRIS for Health (FHIR R4)** server. The notebook ingests synthetic Synthea data, detects when initial risk models fail to stratify patients, refines scoring logic to produce meaningful differentiation, and explicitly treats missing clinical signals (e.g., absent blood pressure) as care gaps. Derived risk scores are written back into FHIR as standardized `Observation` resources using idempotent write patterns.
-*   **Tech Stack:** `Python`, `InterSystems IRIS for Health`, `HL7 FHIR R4`, `REST APIs`, `Pandas`, `Synthetic Data (Synthea)`
+**"Risk Stratification on a Cloud-Hosted FHIR Platform"**
+*   **The Problem:** Healthcare analytics prototypes often run only on local notebooks, hide infrastructure complexity, and produce uniform risk scores that fail to stratify patients or surface missing clinical data.
+*   **The Solution:** An end-to-end, reproducible analytics pipeline built on a **cloud-hosted InterSystems IRIS for Health (FHIR R4)** server deployed on a **Google Cloud Platform VM** using **Docker**. The project includes VM sizing, static IP setup, and firewall configuration to expose the FHIR API securely for external access. Synthetic Synthea data is ingested, initial risk models are validated and refined to produce meaningful patient stratification, missing clinical signals (e.g., absent blood pressure) are flagged as care gaps, and final risk scores are written back to the FHIR store as standardized `Observation` resources using idempotent writes.
+*   **Tech Stack:** `Python`, `InterSystems IRIS for Health`, `HL7 FHIR R4`, `Google Cloud Platform (Compute Engine)`, `Docker`, `REST APIs`, `Pandas`, `Synthetic Data (Synthea)`
+
 
 ### [Hybrid_AI_with_InterSystems_IRIS_&_Embedded_Python.ipynb](./Hybrid_AI_with_InterSystems_IRIS_&_Embedded_Python.ipynb)
 **"The Infrastructure Layer"**
