@@ -31,7 +31,19 @@ This repository demonstrates a **"Full Stack" Healthcare Product Strategy**, mov
 *   **The Solution:** A hybrid architecture using the **InterSystems Native SDK** to train models in Python and write results directly back to high-speed **NoSQL Globals** (`^PatientRisk`) for real-time EMR alerts.
 *   **Tech Stack:** `InterSystems IRIS`, `Embedded Python`, `NoSQL`.
 
----
+### [Healthcare_Interoperability_Standards_Professional_Overview.ipynb](./Healthcare_Interoperability_Standards_Professional_Overview.ipynb)
+**The Interoperability Layer**
+* **The Problem:** Healthcare systems exchange data using multiple overlapping standards (HL7 v2, CDA/CCD, FHIR, X12, IHE profiles), making it difficult for engineers and product managers to reason about data flow, system boundaries, and integration trade-offs.
+* **The Solution:** A structured, standards-oriented reference that explains how event messaging, document exchange, and API-based access coexist in real-world healthcare platforms, with small illustrative examples showing the shape of HL7 v2 messages, CDA/CCD documents, and FHIR resources.
+* **What This Notebook Covers:**
+  * HL7 v2 event messaging (ADT^A01) with segment-level explanations (MSH, EVN, PID, PV1)
+  * CDA/CCD as document-centric clinical snapshots, including common sections (Problems, Medications, Allergies)
+  * FHIR as a granular, resource-based API model
+  * SMART on FHIR for secure application integration
+  * IHE document exchange profiles (XDS, XDR, XCA)
+  * X12 administrative transactions
+  * OMOP and openEHR as secondary-use and modeling frameworks
+* **Tech Focus:** `HL7 v2`, `CDA / CCD`, `FHIR R4`, `SMART on FHIR`, `IHE XDS/XDR/XCA`, `X12`, `OMOP`, `openEHR`
 
 ## 🔒 2. Trust, Safety & Regulatory Compliance
 *Ensuring AI is safe, legal, and trusted by clinicians.*
